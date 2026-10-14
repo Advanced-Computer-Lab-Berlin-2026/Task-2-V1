@@ -31,7 +31,7 @@ git-ignored) with:
 
 ```
 PORT=3000
-MONGO_URI=you connection string
+MONGO_URI=your connection string
 ```
 
 ## What you need to build
