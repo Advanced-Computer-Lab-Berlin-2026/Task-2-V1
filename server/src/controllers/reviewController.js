@@ -19,7 +19,7 @@ export async function getReview(req, res, next) {
     if (!review) {
       return res.status(404).json({ error: 'Review not found' });
     }
-    return res.status(200).json(reviews);
+    return res.status(200).json(review);
   } catch (err) { next(err); }
 }
 
@@ -77,9 +77,9 @@ export async function getTopMeals(req, res, next){
   }
 }
 
-module.exports = {
+/*module.exports = {
   getReview,
   createReview,
   getAllReviews,
   getTopMeals
-};
+};*/
