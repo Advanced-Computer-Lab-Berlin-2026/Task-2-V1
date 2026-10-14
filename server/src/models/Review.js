@@ -18,7 +18,8 @@ const reviewSchema = new mongoose.Schema(
       required: false
     },
     reviewedBy: {
-      type: User,
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User',
       required: false
     }
   },
