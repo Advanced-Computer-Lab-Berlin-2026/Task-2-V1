@@ -3,8 +3,8 @@ import { Review } from '../models/Review.js';
 // GET /api/reviews
 export async function getAllReviews(req, res, next) {
   try {
-    const products = await Product.find();
-    res.json(products);
+    const reviews = await Review.find();
+    res.json(reviews);
   } catch (err) { next(err); }
 }
 
