@@ -30,8 +30,8 @@ There is no `.env` provided. Create `server/.env` yourself (it's
 git-ignored) with:
 
 ```
-PORT=4000
-MONGO_URI=mongodb://tasks:pass1234@ac-j3acrgb-shard-00-00.lueesfz.mongodb.net:27017,ac-j3acrgb-shard-00-01.lueesfz.mongodb.net:27017,ac-j3acrgb-shard-00-02.lueesfz.mongodb.net:27017/?ssl=true&replicaSet=atlas-6to6iy-shard-0&authSource=admin&appName=Cluster0
+PORT=3000
+MONGO_URI=you connection string
 ```
 
 ## What you need to build
