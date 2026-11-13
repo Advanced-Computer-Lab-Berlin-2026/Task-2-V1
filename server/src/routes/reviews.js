@@ -1,13 +1,25 @@
+
 import { Router } from 'express';
+
 import {
   getAllReviews,
   getReview,
   createReview,
-  getReviewSummary
+  getTopMeals
 } from '../controllers/reviewController.js';
 
 const router = Router();
 
-// TODO: wire up the three routes in README.md section 2 and the summary route in section 3.
+// Get the highest-rated meals
+router.get('/top', getTopMeals);
+
+// Get all reviews
+router.get('/', getAllReviews);
+
+// Get one review by ID
+router.get('/:id', getReview);
+
+// Create a new review
+router.post('/', createReview);
 
 export default router;
